@@ -1,6 +1,6 @@
 var fs = require('fs');
 var BSONStream = require('bson-stream');
-module.exports.start = function(bsonFilePath) => {
+module.exports.start = (bsonFilePath) => {
     return new Promise((resolve, reject) => {
         var rs = fs.createReadStream(bsonFilePath);
         var proxyArray = [];
